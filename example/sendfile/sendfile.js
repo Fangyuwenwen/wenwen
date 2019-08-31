@@ -5,7 +5,7 @@ const port = 5500; //定義port
 //[GET] 根路徑
 app.get('/',function(req,res){
     console.log("Recieved GET request on [/] path.");
-    res.sendFile(path.join(__dirname, 'index.html')); //使用sendFile傳送html檔
+    res.sendFile(path.join(__dirname, 'sendfile.html')); //使用sendFile傳送html檔
 });
 
 //[GET] 路徑: /show
