@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>04130755</title>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        .header {
+            color: black;
+            background-color: lightgoldenrodyellow;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto
+        }
+
+        input {
+            border-radius: 8px;
+        }
+    </style>
+</header>
+
+<body>
+    <div class="header radius">Input your information below:
+        <!-- 透過form搭配[GET] HTTP method 來進行query string，把資料傳回後端(路徑是show) -->
+        <form action="show" method="GET">
+            <table>
+                <tr>
+                    <td>
+                        <img src="monkey.jpg" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- 以name取名(用來在後端把資料取出) -->
+                        <input name="name" type="text" placeholder="Name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- 以studentID取名(用來在後端把資料取出) -->
+                        <input name="studentID" type="text" placeholder="Student ID" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- 以email取名(用來在後端把資料取出) -->
+                        <input name="email" type="text" placeholder="E-mail" required />
+                    </td>
+                </tr>
+                <tr>
+                    <!-- 提交form所使用的button -->
+                    <td><input type="submit" value="Submit" /></td>
+                </tr>
+            </table>
+        </form>
+        <form method="GET" action="">
+            <input type="submit" value="回到首頁" />
+        </form>
+    </div>
+
+
+</body>
+
+</html>
